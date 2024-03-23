@@ -39,3 +39,4 @@ else if (anwser.operator === "exponent") {
 else {
     console.log("please enter valid operator");
 }
+console.log("THE END");
