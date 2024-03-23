@@ -38,3 +38,4 @@ if (anwser.operator === "addition") {
 } else {
   console.log("please enter valid operator");
 }
+ console.log("THE END")
