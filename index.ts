@@ -15,13 +15,7 @@ const anwser = await inquirer.prompt([
     message: "select any one operator to perform operation",
     type: "list",
     name: "operator",
-    choices: [
-      "addition",
-      "subtraction",
-      "multiplication",
-      "division",
-      "exponent",
-    ],
+    choices: ["addition", "subtraction", "multiplication", "division", "power"],
   },
 ]);
 
@@ -33,9 +27,9 @@ if (anwser.operator === "addition") {
   console.log(`your anwser is = ${anwser.firstnumber * anwser.secondnumber}`);
 } else if (anwser.operator === "division") {
   console.log(`your anwser is = ${anwser.firstnumber / anwser.secondnumber}`);
-} else if (anwser.operator === "exponent") {
-  console.log(`your anwser is =${anwser.firstnumber ** anwser.secondnumber}`);
+} else if (anwser.operator === "power") {
+  console.log(`your anwser is = ${anwser.firstnumber ** anwser.secondnumber}`);
 } else {
   console.log("please enter valid operator");
 }
- console.log("THE END")
+console.log("THE END");

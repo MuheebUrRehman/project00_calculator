@@ -1,6 +1,6 @@
 {
   "name": "muheeb94-project00_calculator",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "this is a simple cammand line calculator",
   "main": "index.js",
   "type": "module",
