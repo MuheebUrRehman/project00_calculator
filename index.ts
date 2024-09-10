@@ -2,7 +2,19 @@
 
 import inquirer from "inquirer";
 
-const anwser = await inquirer.prompt([
+interface Answers {
+  msg: string;
+  firstnumber: number;
+  secondnumber: number;
+  operator:
+    | "addition"
+    | "subtraction"
+    | "multiplication"
+    | "division"
+    | "power";
+}
+
+const anwser: Answers = await inquirer.prompt([
   {
     message:
       "welcome to Simple Command Line Calculator(press ENTER KEY to continue)",
